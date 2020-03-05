@@ -1,0 +1,265 @@
+
+
+
+.content{
+margin-left: 20%;
+
+}
+
+.main-navigation {
+	
+ position: fixed;
+  bottom: 50%;
+  left: 0%;
+  width: 300px;
+  /* border: 3px solid #73AD21; */
+  width: 20%;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+  display: flex
+
+}
+
+
+.nav_items {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	font-size: 3vw;
+
+}
+
+.nav_items :visited { text-decoration: none; color:black }
+.nav_items :hover,.nav_items :focus,.nav_items :hover {
+	color:  red
+}
+
+.landing_page{
+text-align: center;
+vertical-align: middle;
+position: fixed;
+top: 0;
+left:0;
+width: 100%;
+height: 100%;
+background-color: #3333ff;
+color: white;
+
+font-family: 'Poiret One', cursive;
+
+
+
+}
+
+
+.landing__portrait{
+margin-top: 10%;	
+height:33%;
+border-radius: 100px ;
+border: 3px solid black;
+
+
+}
+
+
+
+
+section {
+    background-color: #6a6aff;
+	min-height: 100%;
+	font-family: 'Poiret One', cursive;
+	font-size: 1.5vw;
+	font-weight: 500;
+
+}
+.scroll_down {
+position: fixed;
+left: 50%;
+margin-left: -58px ;
+bottom: 2%;
+
+}
+
+
+
+#about {
+margin-top:300px;
+width: 100%;
+display: grid;
+grid-template-areas: 
+    "header header header header header"
+    "about_me  about_me about_me portrait portrait"
+	"about_me about_me about_me portrait portrait"
+	"about_me about_me about_me portrait portrait"
+	"about_me about_me  about_me portrait portrait"	
+	"skills skills  skills skills skills"
+	;
+align-items: center;
+align-self: center;
+justify-content: center;
+justify-items: center;
+}
+.title {
+ grid-area: header;
+ align-items: center;
+align-self: center;
+justify-content: center;
+
+
+}
+.about__portrait {
+	width: 100%;
+	grid-area: portrait;
+	border-radius: 100px ;
+border: 3px solid black;
+
+}
+.about_me{
+	padding:30px;
+	grid-area: about_me;
+	align-items: center;
+align-self: center;
+justify-content: center;
+
+  
+
+}
+.skills_grid {
+
+	grid-area: skills;
+
+	padding:2%;
+	border-radius: 20px ;
+	border: 3px solid black;
+	align-items: center;
+
+
+	display:grid;
+
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-column-gap: 10px;
+  grid-row-gap: 15px;
+}
+
+.skill_item {
+
+	width: 100%;
+    height:auto;
+}
+
+
+
+
+
+
+.work_grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 50px;
+	width: 100%;
+	
+  }
+
+
+  .grid__item {
+	  padding:10px;
+  width:100%;
+  border: 3px solid black;
+  border-radius: 20px ;
+	
+ 
+
+  }
+  .project_pict {
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+  }
+
+
+  @media all and (min-width: 500px) and (max-width: 750px) {
+	.grid {
+	  grid-template-columns: 1fr 1fr;
+	}
+	.navigation-list {
+	  display: grid;
+	  grid-template-columns: 1fr 1fr  ;
+	  background-color:white;
+  }
+  
+  }
+
+
+
+
+
+  /* ANIMATION  */
+  @-webkit-keyframes hvr-wobble-skew {
+	16.65% {
+	  -webkit-transform: skew(-12deg);
+	  transform: skew(-12deg);
+	}
+	33.3% {
+	  -webkit-transform: skew(10deg);
+	  transform: skew(10deg);
+	}
+	49.95% {
+	  -webkit-transform: skew(-6deg);
+	  transform: skew(-6deg);
+	}
+	66.6% {
+	  -webkit-transform: skew(4deg);
+	  transform: skew(4deg);
+	}
+	83.25% {
+	  -webkit-transform: skew(-2deg);
+	  transform: skew(-2deg);
+	}
+	100% {
+	  -webkit-transform: skew(0);
+	  transform: skew(0);
+	}
+  }
+  @keyframes hvr-wobble-skew {
+	16.65% {
+	  -webkit-transform: skew(-12deg);
+	  transform: skew(-12deg);
+	}
+	33.3% {
+	  -webkit-transform: skew(10deg);
+	  transform: skew(10deg);
+	}
+	49.95% {
+	  -webkit-transform: skew(-6deg);
+	  transform: skew(-6deg);
+	}
+	66.6% {
+	  -webkit-transform: skew(4deg);
+	  transform: skew(4deg);
+	}
+	83.25% {
+	  -webkit-transform: skew(-2deg);
+	  transform: skew(-2deg);
+	}
+	100% {
+	  -webkit-transform: skew(0);
+	  transform: skew(0);
+	}
+  }
+  .hvr-wobble-skew {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-wobble-skew:hover, .hvr-wobble-skew:focus, .hvr-wobble-skew:active {
+	-webkit-animation-name: hvr-wobble-skew;
+	animation-name: hvr-wobble-skew;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	-webkit-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+  }
