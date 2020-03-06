@@ -1,4 +1,13 @@
+// Hamburgber nav
 
+function navMobile() {
+  var x = document.getElementById("myLinks");
+  if (x.className === "nav_items") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav_items";
+  }
+}
 
 
 // Landing pageXOffset, disappear when scrolling

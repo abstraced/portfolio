@@ -12,6 +12,9 @@
 
   <meta name="author" content="Antoine Luc">
 
+
+  
+  <link rel="shortcut icon" href="img/favicon-96x96.png">
   <!-- fonts -->
   <link href="https://fonts.googleapis.com/css?family=Anton|Poiret+One&display=swap" rel="stylesheet">
   
@@ -27,25 +30,33 @@
   <header class="page-header">
     <!-- <img src="img/antoineluc.png" class="page-header__item" alt="logo of Antoine Luc"> -->
     <!-- <h1 class="page-header__item header_title"> Antoine Luc</h1> -->
-
-    <nav class="main-navigation page-header__item">
-      <ul class="nav_items" role="menubar" class="navigation-list">
+    
+   <img class="logo" src="img/antoineluc.png" >
+    <nav class="main-navigation ">
+      <ul class="nav_items" role="menubar" >
         <li role="presentation">
           <a aria-label="Home" href="index.html" role="menuitem"
-            class="navigation-list__item navigation-list__item--active">Home</a>
+            >Home</a>
         </li>
         <li role="presentation">
-          <a aria-label="About the developper" href="#about" role="menuitem" class="navigation-list__item">About me</a>
+          <a aria-label="About the developper" href="#about" role="menuitem" >About me</a>
         </li>
         <li role="presentation">
-          <a aria-label="work" href="#work" role="menuitem" class="navigation-list__item">Work</a>
+          <a aria-label="work" href="#work" role="menuitem" >Work</a>
         </li>
         <li role="presentation">
-          <a aria-label="Contact" href="#contact" role="menuitem" class="navigation-list__item">Contact</a>
+          <a aria-label="Contact" href="#contact" role="menuitem" >Contact</a>
         </li>
       </ul>
     </nav>
   </header>
+  <footer>
+    <p>Find me on:</p>
+      <a href="https://github.com/abstraced"  target="_blank">  <img src="img/github.svg" alt="Github" class="footer_icon"></a>
+      <a href="https://www.linkedin.com/in/antoine-luc/"  target="_blank">   <img src="img/linkedin.svg" alt="LinkedIn" class="footer_icon"></a>
+
+
+  </footer>
 
   <!-- Home page -->
   <div class='landing_page'>
@@ -74,9 +85,10 @@
   </a>
   <!-- About -->
   <section id='about'>
-    <h2 class="title"> About me</h2>
+    <h2  class="title"> About me</h2>
     <img src="img/portrait.jpg"  class="about__portrait" alt=" A picture of me">
-    <div class="about_me"> I am Antoine, a french web developer based in Berlin with a rich set of skills
+    <div class="about_me">
+    <p > I am Antoine, a french web developer based in Berlin with a rich set of skills
       ranging from art and creativity to programming and new
       technology, through sociology and management . My
       background in the design industry as a furniture designer
@@ -91,8 +103,10 @@
       teamwork.
           You need a nice sleek website for your business? I am your man!
           You need to implement a solution to manage your business? I am your man again!
+        </p>
+        
      </div>
-
+     <div class="code_about"> Stuff i worked with< rfrfrfrf  rfrfrfr rfrfrfr rfrfrfr rfrfrf rfrfrf rfrfrf rfrrf rfrfrf rfrrfr rfrfrf rfrfrf  </div>
 
       <div class="skills_grid"> 
         
@@ -130,70 +144,79 @@
   </section>
   <!-- work -->
   <section id="work">
-    <h1>Work</h1>
+    <h2 class="title">Work</h2>
      <div class="work_grid">
   
   
         <!-- Grid items will live here -->
         <div class="grid__item">
-           <h3>MyFlix App</h3>
-           <p>
+           <h3 class="work_title">MyFlix App</h3>
+           <p class="work_description">
               An app written with the MERN ( mongo, express, react and node) stack that let the user browse films and them to their list of favorites, functioning via a REST API.
            </p>
-           <a href="http://myflixdb.herokuapp.com/client/"> To the website</a>
-           <a href="https://github.com/abstraced/myFlix">See project on GitHub</a>
+           <a href="http://myflixdb.herokuapp.com/client/" target="_blank" class="work_website"> To the website</a>
+           <a href="https://github.com/abstraced/myFlix"  target="_blank" class="work_git">See project on GitHub</a>
            <img src="img/myflix.png" alt="screenshot of myflix" class="project_pict">
         </div>
+        
         <div class="grid__item">
-           <h3>To do list app</h3>
-           <p> A simple to do list app developed with Vue and material design  </p>
-           <a href="https://abstraced.github.io/toDoList/">To the website</a>
-           <a href="https://github.com/abstraced/toDoList">See project on GitHub</a>
-           <img src="img/todolist.png" alt="screenshot of to do list app" class="project_pict">
-        </div>
-        <div class="grid__item">
-           <h3>A simple quizz App</h3>
-           <p>
+           <h3 class="work_title">A simple quizz App</h3>
+           <p class="work_description">
             A sinple quizz developped with Angular 2 and Bootstrap <p>
-             <a href="https://abstraced.github.io/my-awesome-quiz-app/welcome">To the website</a>
-             <a href="https://github.com/abstraced/my-awesome-quiz-app">See project on GitHub</a>
+             <a href="https://abstraced.github.io/my-awesome-quiz-app/welcome" target="_blank" class="work_website">To the website</a>
+             <a href="https://github.com/abstraced/my-awesome-quiz-app"  target="_blank" class="work_git">See project on GitHub</a>
              
              <img src="img/quizapp.png" alt="screenshot of the quiz app" class="project_pict">
         </div>
         <div class="grid__item">
-          <h3>A simple quizz App</h3>
-          <p>
+          <h3 class="work_title"> Meetup</h3>
+          <p class="work_description">
            A serverless App to display upcoming events on Meetup developped with React, AWs and Bootstrap and including some tools to visualize the events<p>
-            <a href="https://abstraced.github.io/meetup">To the website</a>
-            <a href="https://github.com/abstraced/meetup">See project on GitHub</a>
+            <a href="https://abstraced.github.io/meetup" target="_blank" class="work_website">To the website</a>
+            <a href="https://github.com/abstraced/meetup"  target="_blank" class="work_git">See project on GitHub</a>
             
             <img src="img/meetup.png" alt="screenshot of the quiz app" class="project_pict">
        </div>
-       <div class="grid__item">
-        <h3>MyFlix App</h3>
-        <p>
-           An app written with the MERN ( mongo, express, react and node) stack that let the user browse films and them to their list of favorites, functioning via a REST API.
-        </p>
-        <a href="http://myflixdb.herokuapp.com/client/"> To the website</a>
-        <a href="https://github.com/abstraced/myFlix">See project on GitHub</a>
-        <img src="img/myflix.png" alt="screenshot of myflix" class="project_pict">
-     </div>
+       
   
-     <!-- Let's Chat  -->
      <div class="grid__item">
-        <h3> Let's chat</h3>
-        <p> A React-Native app for iOs and Android devices, provides with a full functioning chat that sends and receives messages, store them locally so it's usable offline and has the feature to share images and location.The app interface is build with Gifted-Chat Library and other react-native libraries for the different features, Google firebase 
+        <h3 class="work_title"> Let's chat</h3>
+        <p class="work_description"> A React-Native app for iOs and Android devices, provides with a full functioning chat that sends and receives messages, store them locally so it's usable offline and has the feature to share images and location.The app interface is build with Gifted-Chat Library and other react-native libraries for the different features, Google firebase 
           as database, Documentations are auto generated using JSDoc and finally Expo for building and testing </p>
-        <a href="https://github.com/abstraced/letschat">To the website</a>
-        <a href="https://github.com/abstraced/letschat">See project on GitHub</a>
+        <a href="https://github.com/abstraced/letschat" target="_blank" class="work_website">To the website</a>
+        <a href="https://github.com/abstraced/letschat" target="_blank" class="work_git">See project on GitHub</a>
         <img src="img/letschat.png" alt="screenshot of let's chat" class="project_pict">
      </div>
+     <div class="grid__item">
+      <h3 class="work_title">To do list app</h3>
+      <p class="work_description"> A simple to do list app developed with Vue and material design  </p>
+      <a href="https://abstraced.github.io/toDoList/" target="_blank" class="work_website">To the website</a>
+      <a href="https://github.com/abstraced/toDoList" target="_blank" class="work_git" >See project on GitHub</a>
+      <img src="img/todolist.png" alt="screenshot of to do list app" class="project_pict">
+   </div>
      
   </section>
 
   <!-- contact -->
   <section id='contact'>
-    <h2> Contact</h2>
+    <h2 class="title"> Contact</h2>
+
+
+
+    <p>
+      Antoine Luc <br>
+      Albert-schweitzer-strasse 39 <br>
+      12587 Berlin <br>
+      Germany <br>
+      <br>
+      Telephone:<a aria-label="My telephone number" href="tel:+4917620588302"> +49 (0) 4917620588302 </a> <br>
+      Skype <a aria-label="My skype contact"   href="skype:idontuseskypebutwhocare?"> idontuseskypebutwhocare?</a><br>
+      Mail: <a aria-label="My mail address" href="mailto:antoine.luc@gmail.com"> antoine.luc@gmail.com </a>
+      <br>
+      <br>
+
+    </p>
+    <a href="mailto:antoine.luc@gmail.com"> CONTACT ME!!! directly </a> 
     <form
   action="https://formspree.io/xgeyrldy"
   method="POST"
