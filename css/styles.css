@@ -230,6 +230,8 @@ section {
   "project_pict project_pict"
     
 }
+
+
 .work_title {
 	grid-area: work_title;
 
@@ -239,12 +241,16 @@ section {
 
 }
 .work_website{
-	grid-area: work_website;
+  grid-area: work_website;
+  width:100%;
+ 
 
 }
 .work_git{
+  width:100%;
 
-	grid-area: work_git;
+  grid-area: work_git;
+  
 }
 
 
